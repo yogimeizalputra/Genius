@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./contact.scss";
 
+
 export default function Contact() {
   const [message, setMessage] = useState(false);
 
@@ -8,7 +9,7 @@ export default function Contact() {
     e.preventDefault();
     setMessage(true);
   };
-  
+
   return (
     <div className="contact" id="contact">
       <div className="left">
@@ -20,7 +21,7 @@ export default function Contact() {
           <input type="text" placeholder="Email" />
           <textarea placeholder="Message"></textarea>
           <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span>Thanks, I'll reply ASAP!!</span>}
         </form>
       </div>
     </div>
